@@ -1,0 +1,27 @@
+{
+    "jobs": [
+        {
+            "name": "foo",
+            "commands": [
+                "python -c \"print('This is foo')\"",
+                "python -c \"import time; time.sleep(2)\""
+            ],
+            "result_directory": "/tmp/foo"
+        },
+        {
+            "name": "bar",
+            "commands": [
+                "python -c \"print('This is bar')\"",
+                "python -c \"import time; time.sleep(1)\""
+            ],
+            "result_directory": "/tmp/bar"
+        },
+        {
+            "name": "baz",
+            "commands": [
+                "python -c exit(42)"
+            ],
+            "result_directory": "/tmp/baz"
+        }
+    ]
+}
